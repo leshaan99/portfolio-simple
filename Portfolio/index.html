@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Poppins:wght@300;400&family=Ubuntu:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fafa116bc2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="home-section" id="home">
+        <div class="container">
+            <div class="navbar-container">
+                <nav>
+                    <div class="logo">
+                        <h1 class="name"><span>port</span>folio</h1>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li class="menu-list"> <a href="#home">Home</a> </li>
+                            <li class="menu-list"> <a href="#about">About</a> </li>
+                            <li class="menu-list"> <a href="#skill">Skills</a> </li>
+                            <li class="menu-list"> <a href="#Project">Projects</a> </li>
+                            <li class="menu-list"> <a href="#contact">Contact</a> </li>
+                            <i class="fa-solid fa-xmark"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </nav>
+            </div>
+            <div class="header-container">
+                <div class="header-text">
+                    <h1>Hi, I'm <br><span>Leshan</span> Sanjeewa</h1>
+                    <p>software engineer undergraduate</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-section" id="about">
+        <div class="container">
+            <div class="rows">
+                <div class="col1">
+                    <img src="images/profile1.png" width="300">
+                </div>
+                <div class="col2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>Software Engineering Undergraduate University of Kelaniya, Sri Lanka. Building a robust foundation in programming, algorithms, and software development methodologies.Excited about the limitless possibilities of technology and eager to contribute to innovative solutions.Open to networking and collaboration opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skill-section" id="skill">
+        <div class="container">
+            <h2 class="sub-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-list">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Web Designe</h4>
+                    <p>Capable of designing a Frontend fully function and responsive websites using HTML,CSS, and JS</p>
+                </div>
+                <div class="skill-list">
+                    <i class="fa-brands fa-java"></i>
+                    <h4>JAVA</h4>
+                    <p>Basic Java , Object Oriented programing , java GUI</p>
+                </div>
+                <div class="skill-list">
+                    <i class="fa-sharp fa-solid fa-c"></i>
+                    <h4>C++</h4>
+                    <p>c++ programer , basic to advanced and data structure and algorithm concepts</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="works-section" id="Project">
+        <div class="container">
+            <h2 class="sub-title">My Projects</h2>
+            <div class="works-container">
+                <div class="work-list">
+                    <h4>MoMo<br>Online Shopping Websites</h4>
+                    <p>A website for online shopping using HTML, CSS, JS. In this web site we can buy itens, add to cart, online payment and more...</p>
+                    <div class="layer">
+                        <a href="images/Screenshot 2023-09-05 172615.jpg" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                    </div>
+                </div>
+                <div class="work-list">
+                    <h4>Project Management<br>UI/UX Design</h4>
+                    <p>This is company project management system for managers and users. Design this ui using figma. it easy to make design</p>
+                    <div class="layer">
+                        <a href="images/Screenshot 2023-09-05 172528.jpg" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                    </div>
+                </div>
+                <div class="work-list">
+                    <h4>PortFolio<br>CV Web Site</h4>
+                    <p>My personal cv website. Design using html, css and javascript. In this web site can download cv as pdf.</p>
+                    <div class="layer">
+                        <a href="images/Screenshot (216).png" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="see-more-btn">See more</a>
+        </div>
+    </div>
+
+    <div class="contact-section" id="contact">
+        <div class="container">
+            <div class="rows">
+                <div class="col-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:leshansanjeewa25@gmail.com">leshansanjeewa25@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i>+94 770 215 440</p>
+                    <div class="socialmedia-icons">
+                        <a href="https://www.linkedin.com/in/lesh99"><i class="fa-brands fa-linkedin"></i></a> 
+                        <a href="https://web.facebook.com/leshan99"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_lesh99_"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="cv.pdf" download class="btn btn-cv">Download CV</a>
+                </div>
+                <div class="col-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your mail id" required>
+                        <textarea name="message"  rows="5" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copywrite">
+            <p>Copywrite © Leshan Sanjeewa.</p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

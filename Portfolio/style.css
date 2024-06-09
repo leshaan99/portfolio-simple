@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+span{
+    color: #8F43EE;
+}
+
+.home-section{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+.container{
+    padding: 15px 10%;
+  
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.logo{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.menu-list{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+.menu-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+.menu-list a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #8F43EE;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.menu-list a:hover::after{
+    width: 100%;
+}
+.header-text{
+    color: white;
+    margin-top: 20%;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-section{
+    background-color: white;
+}
+.rows{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.col1{
+    flex-basis: 40%;
+}
+
+.col2{
+    flex-basis: 55%;
+}
+.sub-title{
+    margin: 75px 0 20px 0;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.skill-section{
+    color: white;
+    margin: 25px 0;
+}
+.skills-container{
+    padding: 30px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px,1fr));
+    gap: 100px;
+}
+.skill-list{
+    background-color: #262626;
+    padding: 40px;
+    border-radius: 10px;
+    font-weight: 300;
+    transition: background-color 0.5s, transform 0.5s;
+}
+.skill-list p{
+    font-size: 12px;
+}
+.skill-list h4{
+    font-size: 20px;
+}
+.skill-list i{
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+.skill-list a{
+    text-decoration: none;
+    color: #8e8d8d;
+    font-size: 13px;
+    display: inline;
+    margin-top: 10px;
+}
+.skill-list:hover{
+    background-color: #8F43EE;
+    transform: translateY(-10px);
+}
+
+.works-section{
+    color: black;
+    margin: 25px 0 0 0;
+    background-color: white;
+}
+.works-container{
+    padding: 30px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(250px,1fr));
+    gap: 100px;
+    text-align: justify;
+}
+.work-list h4{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.work-list{
+    padding: 40px;
+    font-weight: 300;
+    border-radius: 5px;
+    border: 2px solid black;
+    position: relative;
+    transition: transform 0.5s;
+}
+.works-section .container .sub-title{
+    text-align: center;
+}
+.layer{
+    height: 0;
+    width: 100%;
+    background-image: linear-gradient(rgb(0,0,0,0.3), #8F43EE);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.layer a{
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    line-height: 60px;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 100%;
+}
+.work-list:hover{
+    transform: scale(1.1);
+}
+.work-list:hover .layer{
+    height: 100%;
+}
+.see-more-btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #8F43EE;
+    transition: background-color 0.5s;
+}
+.see-more-btn:hover{
+    background-color: #8F43EE;
+    color: white;
+}
+
+.contact-section{
+    color: white;
+}
+.col-left{
+    flex-basis: 45%;
+}
+.col-right{
+    flex-basis: 50%;
+}
+.col-left p{
+    margin-top: 20px;
+}
+.col-left p i{
+    font-size: 25px;
+    margin-right: 15px;
+    color: #8F43EE;
+}
+.col-left p a{
+    text-decoration: none;
+    color: white;
+}
+.socialmedia-icons{
+    margin-top: 20px;
+}
+.socialmedia-icons a{
+    text-decoration: none;
+    color: #ababab;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.btn, .btn-cv{
+    display: block;
+    width: fit-content;
+    margin: 30px 0;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    border: 1px solid #8F43EE;
+    transition: background-color 0.5s;
+}
+
+.btn-cv:hover{
+    background-color: #8F43EE;
+    color: white;
+}
+form{
+  width: 100%;
+  margin-top: 75px;
+}
+form input, form textarea{
+    display: block;
+    color: white;
+    margin: 20px 0;
+    width: 80%;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background-color: #262626;
+}
+.btn-submit{
+    background-color: #8F43EE;
+    color: white;
+    padding: 8px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: transform 0.5s;
+}
+.btn-submit:hover{
+    transform: scale(1.1);
+}
+.copywrite{
+    width: 100%;
+    background-color: #262626;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+@media (max-width: 600px){
+    .home-section{
+        background-image: url("images/phonebackground.png");
+        background-size: cover;
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 1rem;
+    }
+    nav .fa-solid{
+        display: block;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .menu ul{
+        background-color: #8F43EE;
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 50px;
+        transition: 0.5s;
+    }
+    .menu ul.active-menu{
+        width: 200px;
+        
+    }
+    .menu ul li{
+        display: block;
+        padding: 10px 0;
+    }
+    .menu ul .fa-solid{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .rows{
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .col2{
+        text-align: justify;
+    }
+    .works-container{
+        padding: 30px 0px;
+    }
+    form input, form textarea{
+        width: 100%;
+    }
+    .col-left p a{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 950px){
+    .home-section{
+        background-image: url("images/phonebackground.png");
+    }
+    nav .fa-solid{
+        display: block;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .menu ul{
+        background-color: #8F43EE;
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding-top: 50px;
+        transition: 0.5s;
+    }
+    .menu ul.active-menu{
+        width: 200px;
+        
+    }
+    .menu ul li{
+        display: block;
+        padding: 10px 0;
+    }
+    .menu ul .fa-solid{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 950px) and (orientation: landscape) {
+    .home-section{
+        height: 100%;
+        background-image: url("images/landscapebackground.png");
+    }
+  }
